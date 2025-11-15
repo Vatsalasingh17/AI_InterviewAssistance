@@ -1,0 +1,15 @@
+streamlit
+openai-whisper
+torch
+torchaudio
+torchvision
+transformers
+librosa
+soundfile
+numpy
+pandas
+plotly
+speechbrain
+langchain
+openai
+scikit-learn

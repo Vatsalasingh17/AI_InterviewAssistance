@@ -1,0 +1,38 @@
+[
+  {
+    "timestamp": "2025-11-08T10:30:41.925870",
+    "text_emotion": "neutral",
+    "pitch": 124.87,
+    "energy": 0.0017,
+    "tempo": 216.35,
+    "jitter": 0,
+    "shimmer": 0,
+    "pauses": 0,
+    "gpt_feedback": "**Feedback:**\n\n1. **Tone and Confidence:** Your tone was neutral, which can come across as lacking enthusiasm. A more dynamic tone could better convey your confidence and engagement with the audience.\n\n2. **Clarity and Structure:** The response was confusing and lacked a clear structure. The numbers presented without context made it hard to follow. A well-organized introduction should include key points about your background, experience, and what you bring to the table.\n\n3. **Content Relevance:** The content seems disconnected from a traditional introduction. Ensure that your response includes relevant information about your professional journey, skills, and what you aim to achieve.\n\n4. **Improvements:** Refine your narrative by summarizing your professional background, key accomplishments, and personal motivations. Practice a more engaging tone to enhance delivery.\n\n5. **Overall Score:** 3/10. A strong introduction sets the stage for the interview; focus on clarity, relevance, and energy.",
+    "gpt_score": 1.0
+  },
+  {
+    "timestamp": "2025-11-13T12:45:49.878798",
+    "text_emotion": "neutral",
+    "pitch": 124.87,
+    "energy": 0.0017,
+    "tempo": 216.35,
+    "jitter": 0,
+    "shimmer": 0,
+    "pauses": 0,
+    "gpt_feedback": "1. **Tone and Confidence**: The candidate\u2019s tone appears neutral but lacks enthusiasm. There is minimal variation in pitch, which can make the delivery sound monotonous. Increasing energy and vocal variation would enhance confidence.\n\n2. **Clarity and Structure**: The response lacks clear structure and coherence. Words and phrases seem jumbled and disconnected, making it difficult to follow the candidate\u2019s introduction.\n\n3. **Content Relevance**: The content provided is not relevant to a self-introduction. It includes nonsensical elements, which could confuse the interviewer and detract from the candidate\u2019s qualifications.\n\n4. **Improvements**: The candidate should prepare a structured introduction that includes their name, background, relevant experience, and interests related to the position. Practice delivering the introduction with a confident tone and appropriate pacing.\n\n5. **Overall Score**: 2/10. The response needs significant improvement in clarity, relevance, and delivery.",
+    "gpt_score": 1.0
+  },
+  {
+    "timestamp": "2025-11-15T07:57:26.870232",
+    "text_emotion": "neutral",
+    "pitch": 124.87,
+    "energy": 0.0017,
+    "tempo": 216.35,
+    "jitter": 0,
+    "shimmer": 0,
+    "pauses": 0,
+    "gpt_feedback": "1. **Tone and Confidence**: The tone conveyed is neutral, lacking the enthusiasm typically expected in an introduction. Confidence appears low due to a limited vocal energy level.\n\n2. **Clarity and Structure**: The response is unclear and lacks a structured format. It doesn't provide a coherent introduction and seems to consist of fragmented statements (\"10.1 est. 1 est. 2 est.\") which are difficult to interpret.\n\n3. **Content Relevance**: The content is not relevant or meaningful, as it does not provide any information about the candidate's background, skills, or qualifications.\n\n4. **Improvements**: To improve, the candidate should deliver a more structured introduction that includes their name, professional background, key skills, and motivations. Practicing vocal delivery can help enhance confidence and engagement.\n\n5. **Overall Score**: 2/10 \u2013 The response needs significant improvement in structure, clarity, and engagement.",
+    "gpt_score": 1.0
+  }
+]
