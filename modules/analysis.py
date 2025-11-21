@@ -3,7 +3,20 @@ import pandas as pd
 import numpy as np
 
 def calculate_trends(df: pd.DataFrame):
-    """Return summary stats and simple linear trend on gpt_score."""
+    """
+    Compute summary statistics and a simple linear trend for the 'gpt_score' column.
+
+    Returns a dictionary containing:
+    - average_score: Mean GPT score
+    - trend: 'Improving', 'Declining', or 'Stable' based on slope of linear fit
+    - score_variance: Variance of GPT scores
+    - score_volatility: Standard deviation of GPT scores
+
+    Handles edge cases such as:
+    - Empty DataFrame
+    - DataFrames with fewer than two rows (insufficient for slope calculation)
+    """
+    # Handle empty or missing data
     if df is None or df.empty:
         return {
             "average_score": 0,
@@ -12,6 +25,7 @@ def calculate_trends(df: pd.DataFrame):
             "score_volatility": 0
         }
 
+    # If only a single score exists, slope cannot be computed
     if len(df) < 2:
         return {
             "average_score": float(df["gpt_score"].mean()),
@@ -20,10 +34,16 @@ def calculate_trends(df: pd.DataFrame):
             "score_volatility": 0
         }
 
-    slope = np.polyfit(range(len(df)), df["gpt_score"], 1)[0]  # polyfit function return two values [slope,intercept]  [0] gives us slope.
+    # Fit a linear regression line to determine score trend
+    # polyfit returns [slope, intercept]; [0] extracts slope
+    slope = np.polyfit(range(len(df)), df["gpt_score"], 1)[0]
+
+    # Interpret slope direction
     trend = "Improving" if slope > 0 else ("Declining" if slope < 0 else "Stable")
-    variance = float(np.var(df["gpt_score"]))   # variance means how much your scores are spread out if gpt scores are close together then low variance and if gpt scores are far away then high variance
-    volatility = float(np.std(df["gpt_score"])) # (volatility) standard deviation which is the square root of variance.
+
+    # Variance and standard deviation measure score spread/volatility
+    variance = float(np.var(df["gpt_score"]))
+    volatility = float(np.std(df["gpt_score"]))
 
     return {
         "average_score": round(df["gpt_score"].mean(), 2),
@@ -33,11 +53,24 @@ def calculate_trends(df: pd.DataFrame):
     }
 
 def generate_report(df: pd.DataFrame) -> str:
+    """
+    Generate a formatted performance report including:
+    - Score trends (from calculate_trends)
+    - Average values of audio features if available
+
+    Missing or fully-empty columns are handled safely by safe_avg().
+    """
     trends = calculate_trends(df)
 
     def safe_avg(column):
-        return round(df[column].mean(), 4) if column in df and not df[column].isna().all() else 0  #“If the column exists AND it is not completely empty,return the average of that column (rounded to 4 decimals).Otherwise,return 0.”
+        """
+        Safely compute the average of a column:
+        - Returns 0 if the column does not exist or contains only NaN values.
+        - Otherwise, returns the mean rounded to 4 decimal places.
+        """
+        return round(df[column].mean(), 4) if column in df and not df[column].isna().all() else 0
 
+    # Build the multi-section report
     report = f"""
 **Performance Summary**
 
