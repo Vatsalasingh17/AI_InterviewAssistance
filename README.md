@@ -16,5 +16,6 @@ An AI-powered mock interview assistant that analyzes your voice, emotions, and c
 
 🌐 Streamlit web interface — simple and interactive
 
-<img width="1384" height="396" alt="image" src="https://github.com/user-attachments/assets/7aefd5da-ac44-44f4-991f-a8e29058900c" />
+<img width="1381" height="400" alt="image" src="https://github.com/user-attachments/assets/8da2adfd-7da6-4e47-bb9c-cee092364eea" />
+
 
