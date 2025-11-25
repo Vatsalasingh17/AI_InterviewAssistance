@@ -18,4 +18,17 @@ An AI-powered mock interview assistant that analyzes your voice, emotions, and c
 
 <img width="1381" height="400" alt="image" src="https://github.com/user-attachments/assets/8da2adfd-7da6-4e47-bb9c-cee092364eea" />
 
+<img width="1381" height="263" alt="image" src="https://github.com/user-attachments/assets/b8df377a-ace4-40e3-9459-17083b378c25" />
+
+<img width="1428" height="498" alt="image" src="https://github.com/user-attachments/assets/c3b86ac1-2ce8-43fa-8882-07f4608f7a7e" />
+
+<img width="503" height="288" alt="image" src="https://github.com/user-attachments/assets/2bfbefaf-e9ac-40a0-bece-525dba73993f" />
+
+
+
+
+
+
+
+
 
