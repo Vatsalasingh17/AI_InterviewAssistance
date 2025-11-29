@@ -7,7 +7,7 @@ AudioSegment.ffprobe = r"C:\Users\Vatsala Singh\Downloads\ffmpeg-8.0-full_build\
 import streamlit as st # for creating the UI
 import plotly.graph_objects as go #Used for creating the graphs,charts
 import plotly.express as px
-import re  #python's regex(regular expression) library for extracting of text,finding the text and replace the text
+import re  #python's regex(regular expression) library for extracting of text,finding the text and replacing the text
 import os
 
 from modules import database, analysis
