@@ -1,6 +1,13 @@
 **🎤 AI Interview Coach 2.0**
 
 An AI-powered mock interview assistant that analyzes your voice, emotions, and communication skills — and gives personalized feedback to help you improve for real interviews.
+**Tech Stack:** Python, Streamlit, OpenAI Whisper, Hugging Face Transformers, SpeechBrain, Librosa, NumPy, Pandas, Plotly,
+SQLite, LangChain, OpenAI API, Torch, Torchaudio, Scikit-learn.
+• Implemented GPT-based feedback generation using OpenAI API to analyze communication clarity, content relevance,
+confidence, and tone.
+• Built a fully interactive Streamlit dashboard for real-time analysis, visual emotion charts, and automated scoring.
+• Designed a SQLite-backed performance tracking system to store each interview attempt and visualize improvement trends
+using Plotly analytics.
 
 🚀 Features
 
